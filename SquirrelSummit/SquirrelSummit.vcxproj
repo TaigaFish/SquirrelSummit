@@ -183,6 +183,14 @@
     <ClInclude Include="Texture2D.h" />
     <ClInclude Include="Wall.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\sdl2.nuget.redist.2.30.0\build\native\sdl2.nuget.redist.targets" Condition="Exists('..\packages\sdl2.nuget.redist.2.30.0\build\native\sdl2.nuget.redist.targets')" />
